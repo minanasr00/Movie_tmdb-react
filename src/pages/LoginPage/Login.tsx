@@ -51,7 +51,7 @@ export default function Login() {
     }
 
     return <>
-        <div className={`w-full min-h-screen bg-[url("../assets/zjgs096khv591.jpg")] bg-cover bg-center bg-no-repeat flex  justify-center items-center`}>
+        <div className={`bg-[linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../assets/zjgs096khv591.jpg")] w-full min-h-screen  bg-cover bg-center bg-no-repeat flex  justify-center items-center`}>
             <div className="sm:w-[75%] md:w-[50%] h-[50%] bg-[#000000cc] text-white flex flex-col items-center p-5">
                 <div className="text-[2rem]"> Sign In</div>
                 <div className="md:w-[75%] sm:w-[100%]">
