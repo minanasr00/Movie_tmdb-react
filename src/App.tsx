@@ -5,6 +5,9 @@ import Register from './pages/RegisterPage/Register'
 import Layout from './pages/Layout/Layout'
 import Home from './pages/HomePage/Home'
 import AuthProvider from './context/Authcontext';
+ import {QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
 
 const routes: RouteObject[] = [
   {
@@ -16,12 +19,15 @@ const routes: RouteObject[] = [
   ] }
 ] 
 const router = createBrowserRouter(routes)
+const queryClient = new QueryClient()
 function App() {
 
   return <>
+    <QueryClientProvider client={queryClient}>
     <AuthProvider>
     <RouterProvider router={router}/> 
     </AuthProvider>
+    </QueryClientProvider>
     </>
 }
 
