@@ -26,3 +26,4 @@ export type TrendList = {
     total_pages: number,
     total_results: number
 }
+
